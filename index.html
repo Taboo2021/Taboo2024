@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboo Aviation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'headline': ['Poppins', 'sans-serif'],
+                        'body': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1E3A8A',
+                        'secondary': '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-body text-gray-700 bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-primary text-white shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center space-x-3">
+                <img src="https://scontent.fcmb11-1.fna.fbcdn.net/v/t1.6435-9/124820552_105273254735236_2658803185267921392_n.png?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGGJgsRNNo9lujeqPFVnAffyZgffqgNfRrJmB9-qA19Gl02-Iasez_AR4UXDBsKp240aRdfAsm2yqUnaW4UqzPs&_nc_ohc=4-8hzcTdT44Q7kNvgF4sNrZ&_nc_zt=23&_nc_ht=scontent.fcmb11-1.fna&_nc_gid=AysbBm-47VUVmeVe_eEA028&oh=00_AYC9eBETz_DML0_FLZQNZOtnEQ8ZvKFBHKTzLw9pEco4zQ&oe=677FD7E4" alt="Taboo Aviation Logo" class="w-12 h-12">
+                <h1 class="text-2xl font-headline font-bold">Taboo Aviation</h1>
+            </div>
+            <nav class="space-x-6">
+                <a href="#home" class="hover:text-secondary">Home</a>
+                <a href="#about" class="hover:text-secondary">About</a>
+                <a href="#services" class="hover:text-secondary">Services</a>
+                <a href="#ceo-message" class="hover:text-secondary">CEO's Message</a>
+                <a href="#contact" class="hover:text-secondary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" 
+        class="h-screen flex items-center justify-center bg-cover bg-center text-white relative"
+        style="background-image: url('http://www.jaloaviation.com/wp-content/uploads/2014/11/jalo-aviation-slide-02.jpg');">
+        <div class="bg-black bg-opacity-50 w-full h-full absolute top-0 left-0"></div> <!-- Semi-transparent overlay -->
+        <div class="text-center relative z-10">
+            <h2 class="text-5xl font-headline font-bold fade-in">Soar High with Taboo Aviation</h2>
+            <p class="mt-4 text-lg fade-in">Your Journey to the Skies Begins Here</p>
+            <a href="#services" class="mt-6 inline-block px-8 py-3 bg-white text-primary font-bold rounded-md shadow-md hover:bg-gray-200 fade-in">
+                Explore Our Services
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-100 text-center">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-headline font-bold text-primary mb-6 fade-in">About Us</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto fade-in">
+                Taboo Aviation is committed to providing high-quality aviation training and services. We nurture future aviators through
+                modern, practical, and comprehensive programs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-headline font-bold text-primary mb-12 fade-in">Our Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 shadow-lg rounded-md fade-in">
+                    <h4 class="text-xl font-bold mb-2 text-secondary">✈️ Pilot Training</h4>
+                    <p class="text-gray-600">Comprehensive programs for private and commercial licenses.</p>
+                </div>
+                <div class="p-6 shadow-lg rounded-md fade-in">
+                    <h4 class="text-xl font-bold mb-2 text-secondary">⚙️ Aircraft Maintenance</h4>
+                    <p class="text-gray-600">Learn the technical skills to keep planes in the sky safely.</p>
+                </div>
+                <div class="p-6 shadow-lg rounded-md fade-in">
+                    <h4 class="text-xl font-bold mb-2 text-secondary">🚁 Drone Operations</h4>
+                    <p class="text-gray-600">Professional drone pilot certifications and operations training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO's Message Section -->
+    <section id="ceo-message" class="py-24 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0">
+            <div class="w-full md:w-1/3 flex justify-center">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQFx_vWhUFO7lw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722423822139?e=1739404800&v=beta&t=brwIVDa1b4jJ-dV-ptxTUz_GGRBG7mJ8kqQafvkAPds" alt="CEO's Photo" class="rounded-full shadow-lg w-56 h-56 object-cover">
+            </div>
+            <div class="w-full md:w-2/3 text-center md:text-left space-y-4 px-6">
+                <h3 class="text-3xl font-headline font-bold text-primary">Message from the CEO</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Welcome to Taboo Aviation, where passion meets precision. Our mission is to empower the next generation
+                    of aviation professionals with unmatched training and resources. We believe the sky is not the limit—it's the beginning.
+                    Join us as we soar to new heights together.
+                </p>
+                <p class="text-secondary font-bold text-xl">- [Thisara Jayamanna]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-primary text-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-headline font-bold mb-6 fade-in">Contact Us</h3>
+            <p class="mb-6 fade-in">Have questions? We're here to help.</p>
+            <form class="max-w-lg mx-auto space-y-4 fade-in">
+                <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md shadow-md">
+                <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md shadow-md">
+                <textarea placeholder="Your Message" class="w-full p-3 rounded-md shadow-md"></textarea>
+                <button type="submit" class="bg-secondary text-white px-6 py-3 rounded-md shadow-md hover:bg-green-500">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Taboo Aviation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
